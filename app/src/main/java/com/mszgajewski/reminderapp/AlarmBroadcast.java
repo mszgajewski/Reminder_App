@@ -51,7 +51,6 @@ public class AlarmBroadcast extends BroadcastReceiver {
             notificationManager.createNotificationChannel(channel);
             mBuilder.setChannelId(channelId);
         }
-
         Notification notification = mBuilder.build();
         notificationManager.notify(1, notification);
     }

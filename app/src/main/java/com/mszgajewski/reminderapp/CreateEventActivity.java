@@ -97,6 +97,7 @@ public class CreateEventActivity extends AppCompatActivity implements View.OnCli
         } else {
             formattedMinute = "" + minute;
         }
+
         if (hourOfDay == 0) {
             time = "12" + ":" + formattedMinute;
         } else if (hourOfDay < 12) {

@@ -1,8 +1,6 @@
 package com.mszgajewski.reminderapp;
 
 import android.os.Bundle;
-import android.widget.TextView;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +15,6 @@ public class NotificationMessage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityNotificationMessageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         Bundle bundle = getIntent().getExtras();
         binding.tvMessage.setText(bundle.getString("message"));
     }
