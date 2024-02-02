@@ -6,8 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.mszgajewski.reminderapp.Database.EntityClass;
 import com.mszgajewski.reminderapp.R;
 import java.util.List;

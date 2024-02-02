@@ -3,7 +3,6 @@ package com.mszgajewski.reminderapp;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.mszgajewski.reminderapp.databinding.ActivityNotificationMessageBinding;
 
 public class NotificationMessage extends AppCompatActivity {

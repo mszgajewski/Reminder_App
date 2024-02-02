@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.RemoteViews;
-
 import androidx.core.app.NotificationCompat;
 
 public class AlarmBroadcast extends BroadcastReceiver {
@@ -32,9 +31,11 @@ public class AlarmBroadcast extends BroadcastReceiver {
         RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.notification_layout);
         contentView.setImageViewResource(R.id.icon,R.mipmap.ic_launcher);
         PendingIntent pendingSwitchIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
+
         contentView.setOnClickPendingIntent(R.id.flashButton, pendingSwitchIntent);
         contentView.setTextViewText(R.id.message, text);
         contentView.setTextViewText(R.id.date, date);
+
         mBuilder.setSmallIcon(R.drawable.ic_baseline_alarm_24);
         mBuilder.setAutoCancel(true);
         mBuilder.setOngoing(true);

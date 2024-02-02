@@ -170,7 +170,7 @@ public class CreateEventActivity extends AppCompatActivity implements View.OnCli
         try {
             Date date1 = formatter.parse(dateAndTime);
             alarmManager.set(AlarmManager.RTC_WAKEUP, date1.getTime(),pendingIntent);
-            Toast.makeText(this, "Alarm ustawiony", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Ustawiono alarm", Toast.LENGTH_SHORT).show();
         } catch (ParseException e) {
             e.printStackTrace();
         }
